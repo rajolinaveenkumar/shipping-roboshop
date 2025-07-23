@@ -1,7 +1,7 @@
 FROM maven As builder
 WORKDIR /opt/server
 COPY code/src .
-COPY pom.xml .
+COPY code/pom.xml .
 RUN mvn clean package
 RUN ls -ltr target
 
