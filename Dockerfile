@@ -1,6 +1,6 @@
 FROM maven
 WORKDIR /opt/server
-COPY code/src .
+COPY code/src /opt/server/src
 COPY code/pom.xml .
 RUN mvn clean package
 RUN ls -ltr target
