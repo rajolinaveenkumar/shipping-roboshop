@@ -1,0 +1,4 @@
+apiVersion: v1
+name: shipping-chart
+version: 0.0.1
+description: This is the shipping component applicationn

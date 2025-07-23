@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: shipping-configmap 
+  namespace: roboshop
+  labels:
+    project: roboshop
+    component: shipping
+    environment: dev
+    tier: backend
+    code: shipping-roboshop-dev
+data:
+  CART_ENDPOINT: "cart-svc:8080"
+  DB_HOST: "mysql-dev.naveenrajoli.site"
+
+  
