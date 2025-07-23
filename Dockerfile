@@ -1,4 +1,4 @@
-FROM maven As builder
+FROM maven
 WORKDIR /opt/server
 COPY code/src .
 COPY code/pom.xml .
